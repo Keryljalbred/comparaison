@@ -1,0 +1,27 @@
+{
+    "timestamp": "2025-04-25 10:06:53",
+    "database": "ArangoDB",
+    "collection": "amazon_reviews",
+    "crud_stats": {
+        "create": {
+            "time": 2.1181,
+            "cpu": 1.0,
+            "ram": 0.0
+        },
+        "read": {
+            "time": 2.1149,
+            "cpu": 0.0,
+            "ram": 0.0
+        },
+        "update": {
+            "time": 2.185,
+            "cpu": 0.0,
+            "ram": 0.0
+        },
+        "delete": {
+            "time": 2.1182,
+            "cpu": 0.0,
+            "ram": 0.0
+        }
+    }
+}

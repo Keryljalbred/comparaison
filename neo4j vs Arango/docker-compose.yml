@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  neo4j:
+    image: neo4j:latest
+    container_name: neo4j
+    environment:
+      NEO4J_AUTH: neo4j/password  # Remplacez par votre mot de passe
+    ports:
+      - "7474:7474"  # Port pour l'interface web
+      - "7687:7687"  # Port pour le protocole Bolt
+    volumes:
+      - neo4j_data:/data  # Volume pour persister les données
+
+  arangodb:
+    image: arangodb:latest
+    container_name: arangodb
+    environment:
+      ARANGO_ROOT_PASSWORD: password  # Remplacez par votre mot de passe
+    ports:
+      - "8529:8529"  # Port pour l'interface web
+    volumes:
+      - arangodb_data:/var/lib/arangodb3  # Volume pour persister les données
+
+volumes:
+  neo4j_data:
+  arangodb_data:

@@ -1,0 +1,45 @@
+## Synthèse et Discussion
+
+### Contexte
+
+Dans le cadre de la gestion des bases de données, il est essentiel d'évaluer les performances des systèmes de stockage. Ce projet a impliqué l'importation, l'exportation et les opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) sur deux systèmes de bases de données : DynamoDB et Riak. L'objectif principal était de mesurer le temps d'exécution et la consommation des ressources (CPU et RAM) de ces opérations, afin de comparer les performances des deux systèmes.
+
+### Méthodologie
+
+1. **Scripts de Fonctionnalité** :
+   - Des scripts Python ont été créés pour chaque opération (importation, exportation, CRUD) pour DynamoDB et Riak. Chaque script mesure le temps d'exécution et la consommation des ressources.
+   - Les résultats sont imprimés, puis extraits par un script principal qui compile toutes les mesures dans un tableau.
+
+2. **Mesures de Performance** :
+   - **Temps d'exécution** : Mesuré en secondes pour chaque opération.
+   - **Consommation des ressources** : Utilisation du CPU et de la RAM avant et après chaque opération, convertie en mégaoctets (MB).
+
+### Résultats
+
+Le tableau comparatif généré fournit les résultats des temps d'exécution et de l'utilisation des ressources pour chaque opération sur les deux systèmes. Voici quelques points clés :
+
+- **Importation** :
+  - Les temps d'importation peuvent varier en fonction de la taille des données et de la configuration des bases de données.
+  
+- **CRUD** :
+  - Les opérations de création, lecture, mise à jour et suppression ont des performances distinctes, souvent influencées par la structure des données et l'architecture du système.
+  
+- **Exportation** :
+  - Similarité avec l'importation, mais les temps peuvent être affectés par la manière dont les données sont récupérées et traitées.
+
+### Discussion
+
+1. **Comparaison des Performances** :
+   - **DynamoDB** : Souvent plus rapide pour les opérations sur de grandes quantités de données en raison de son architecture scalable et de ses capacités de traitement.
+   - **Riak** : Peut offrir une plus grande flexibilité avec des données non structurées, mais peut être moins performant pour certaines opérations en raison de sa conception orientée clé-valeur.
+
+2. **Consommation des Ressources** :
+   - Les résultats montrent que l'utilisation des ressources varie entre les deux systèmes. DynamoDB, étant un service géré, peut optimiser l'utilisation des ressources, tandis que Riak, étant auto-hébergé, peut nécessiter une gestion plus attentive des ressources.
+
+3. **Implications Pratiques** :
+   - Le choix entre DynamoDB et Riak dépendra des besoins spécifiques de l'application, notamment en matière de scalabilité, de structure des données et de budget.
+   - Une analyse approfondie des résultats peut aider à ajuster les configurations pour optimiser les performances.
+
+### Conclusion
+
+L'évaluation des performances des bases de données est cruciale pour garantir l'efficacité des applications. Ce projet a permis de mettre en lumière les différences entre DynamoDB et Riak, offrant des insights précieux pour les décisions futures. Les résultats doivent être interprétés dans le contexte des besoins spécifiques de l'application et des ressources disponibles. Une étude continue et des tests réguliers sont recommandés pour s'assurer que les bases de données choisies répondent aux exigences en constante évolution.

@@ -1,0 +1,3 @@
+Dataset,MongoDB Time (s),ArangoDB Time (s),MongoDB CPU (%),ArangoDB CPU (%),MongoDB RAM (MB),ArangoDB RAM (MB)
+amazon_reviews,18.65,664.62,0.0,0.0,54.25,0.5
+google_books,2.08,2.6,0.0,0.0,0.0,0.0

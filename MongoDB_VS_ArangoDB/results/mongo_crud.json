@@ -1,0 +1,27 @@
+{
+    "timestamp": "2025-04-25 10:12:47",
+    "database": "MongoDB",
+    "collection": "amazon_reviews",
+    "crud_stats": {
+        "create": {
+            "time": 2.1196,
+            "cpu": -1.0,
+            "ram": 2.5
+        },
+        "read": {
+            "time": 20.2002,
+            "cpu": 0.0,
+            "ram": 7.41
+        },
+        "update": {
+            "time": 20.7204,
+            "cpu": 0.0,
+            "ram": 1.12
+        },
+        "delete": {
+            "time": 25.2109,
+            "cpu": 0.0,
+            "ram": -30.84
+        }
+    }
+}

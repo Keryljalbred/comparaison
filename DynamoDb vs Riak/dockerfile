@@ -1,0 +1,8 @@
+FROM python:3.8-slim
+
+WORKDIR /app
+COPY riak_import.py /app/
+
+RUN pip install --no-cache-dir riak
+
+CMD ["python", "riak_import.py"]

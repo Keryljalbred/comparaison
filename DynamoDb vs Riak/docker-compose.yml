@@ -1,0 +1,16 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  riak:
+    image: basho/riak-kv
+    container_name: riak
+    ports:
+      - "8087:8087"  # Protocol Buffers port
+      - "8098:8098"  # HTTP API port
+    networks:
+      - riak_network
+
+networks:
+  riak_network:
+    driver: bridge
